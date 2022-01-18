@@ -4,7 +4,7 @@ class UserController  {
   async create(req, res) {
     try {
       const result = await UserService.create(req.body);
-      return res.status(201).json(result);
+      return res.status(201).json({msg: result});
     } catch (error) {
       res.status(500).json({ error })
     }
