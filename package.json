@@ -5,17 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "start-db": "docker compose up",
+    "stop-db": "docker compose down"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "nodemon": "2.0.13"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "joi": "^17.4.2",
-    "mongoose": "^6.0.11"
+    "express": "4.17.1",
+    "joi": "17.4.2",
+    "mongoose": "6.0.11"
   }
 }
