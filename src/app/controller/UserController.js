@@ -6,7 +6,7 @@ class UserController  {
       const result = await UserService.create(req.body);
       return res.status(201).json(result);
     } catch (error) {
-      res.status(500).json({ error })
+      res.status(500).json({ error });
     }
   }
 }
